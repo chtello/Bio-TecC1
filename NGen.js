@@ -1,18 +1,22 @@
-const express = require("express");
-const ejs = require('ejs');
-
-
-function CGen (CaDG){
-    for (let i = 0; i < CaDG.length; i++) {
-        if (i == 0) {
-              let LA = Math.floor(Math.random() * L.length);
-        return L[LA];
-            CaDG[i] = CaDG[i] + L[LA];
-        
-        }
-    }
-return CGen(CaDG)
-}
+let Br = document.getElementById("barra");
 let L = ["G","T","A"];
-    let CaDG = ["A","U","G","0","0","0","0","0","0","0","0","0","0","0","0","U","A","A"];
-console.log(CGen (CaDG));
+let CaDG = ["A","U","G","","","","","","","","","","","","","U","A","A"];
+
+
+const NewG = document.getElementById("Create");
+NewG.addEventListener("click", function ()  {
+    for (let i = 0; i < CaDG.length; i++) {
+        let LA = Math.floor(Math.random() * L.length);
+        if (CaDG[i] == "") {     
+            CaDG[i] = CaDG[i] + L[LA];
+        }
+        
+    }
+    Br.value = CaDG;
+    return CaDG
+});
+
+const DeltG = document.getElementById("Delte");
+DeltG.addEventListener("click", function ()  {
+    Br.value = "";
+});
