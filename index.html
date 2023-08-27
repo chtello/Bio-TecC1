@@ -11,21 +11,42 @@
 <div class="conteiner">
 
 
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Genes</button>
 
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 20%;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            
+                <img src="logo.png" class="ImgP">
+            <span class="fs-4">Bio-Tec Company</span>
+        </a>
+        <button type="button" class="Genes" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Genes</button>
+        
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">Trabaja Con Genes</h1>
+                <h2 class="modal-title">Trabaja con Genes</h2>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+                <h5 class="modal-title">Secuencia ADN</h5>
                 <input type="text" class="form-control" id="barra"/>
-            </div>
-            <div class="modal-footer">
+                <input type="text" class="form-control" id="barra2"/>
+                <button type="button" class="btn btn-primary" id="CreateGe">Generar</button>
                 
-            <button type="button" class="btn btn-primary" id="Create">Generar</button>
+            </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Traducción ARNm</h5>
+                    <input type="text" class="form-control" id="barra3"/>
+                    <button type="button" class="btn btn-primary" id="CreateTr">Generar</button>
+                    
+                </div>
+                <div class="modal-body">
+                    <h5 class="modal-title">Polipéptidos</h5>
+                    <input type="text" class="form-control" id="barra4"/>
+                    <button type="button" class="btn btn-primary" id="CreatePo">Generar</button>
+                    
+                </div>
+            <div class="modal-footer">
             <button type="button" class="btn btn-secondary" id="Delte">Eliminar</button>
             <button type="button" class="btn btn-primary"id="Save">Guardar</button>
             </div>
