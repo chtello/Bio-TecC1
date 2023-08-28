@@ -1,25 +1,34 @@
-.conteiner{
+body {
+    background-color: #040926;
+    color: white;
+  }
+  .navbar {
+    background-color: #148BA6;
+  }
+  .carousel {
+    background-color: #1DDDF2;
+    padding: 20px;
+  }
+  .footer {
+    background-color: #25D9D9;
+    padding: 10px;
+    text-align: center;
+  }
+  .name{
+    color: black;
+  }
+  .Genes {
+    background-color: #66D9AF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
     display: flex;
-    width: 100%;
-    height: 100%;
-    background-color:  #000057 ;
-}
-.Genes{
-width: auto;
-height: auto;
-background-color: #29a49c;
-border-radius: 20%;
-color: #000057;
-border-color: black;
-}
-.ImgP{
-    width: 40%;
-    height:60%;
-    border-radius: 20%;
-}
-.fs-4{
-    color: #35A29F;
-}
-.modal-title{
-    color: #000057;
-}
+  justify-content: center;
+  align-items: center;
+
+
+  }
+  
